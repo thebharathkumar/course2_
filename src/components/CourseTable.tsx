@@ -33,6 +33,11 @@ export default function CourseTable({
 }: CourseTableProps) {
   return (
     <div className="max-w-7xl mx-auto px-6 pb-12">
+      {total > 0 && !loading && (
+        <div className="text-sm text-gray-500 mb-3">
+          {total.toLocaleString()} course{total !== 1 ? "s" : ""} found
+        </div>
+      )}
       <div className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">

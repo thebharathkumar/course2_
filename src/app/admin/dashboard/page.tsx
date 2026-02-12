@@ -371,36 +371,24 @@ export default function AdminDashboard() {
                       <td className="px-4 py-3 text-center">
                         <button
                           onClick={() => toggleVisible(setting.column_key)}
-                          className={`w-10 h-6 rounded-full transition-colors relative ${
-                            setting.visible
-                              ? "bg-blue-600"
-                              : "bg-gray-300"
-                          }`}
+                          className="w-10 h-6 rounded-full transition-colors relative"
+                          style={{ backgroundColor: setting.visible ? '#2563eb' : '#d1d5db' }}
                         >
                           <span
-                            className={`absolute top-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform ${
-                              setting.visible
-                                ? "translate-x-4.5"
-                                : "translate-x-0.5"
-                            }`}
+                            className="absolute top-0.5 w-5 h-5 bg-white rounded-full shadow transition-all duration-200"
+                            style={{ left: setting.visible ? '18px' : '2px' }}
                           />
                         </button>
                       </td>
                       <td className="px-4 py-3 text-center">
                         <button
                           onClick={() => toggleFilter(setting.column_key)}
-                          className={`w-10 h-6 rounded-full transition-colors relative ${
-                            setting.is_filter
-                              ? "bg-green-600"
-                              : "bg-gray-300"
-                          }`}
+                          className="w-10 h-6 rounded-full transition-colors relative"
+                          style={{ backgroundColor: setting.is_filter ? '#16a34a' : '#d1d5db' }}
                         >
                           <span
-                            className={`absolute top-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform ${
-                              setting.is_filter
-                                ? "translate-x-4.5"
-                                : "translate-x-0.5"
-                            }`}
+                            className="absolute top-0.5 w-5 h-5 bg-white rounded-full shadow transition-all duration-200"
+                            style={{ left: setting.is_filter ? '18px' : '2px' }}
                           />
                         </button>
                       </td>

@@ -20,7 +20,7 @@ export default function FilterSection({
   if (filters.length === 0) return null;
 
   return (
-    <div className="max-w-7xl mx-auto px-6 -mt-4 mb-6 relative z-10">
+    <div className="max-w-7xl mx-auto px-6 mt-6 mb-6 relative z-10">
       <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6">
         <div className="flex items-center gap-2 mb-4">
           <svg
